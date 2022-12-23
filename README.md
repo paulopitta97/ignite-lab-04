@@ -17,3 +17,9 @@ npx prisma migrate dev
 npx prisma studio
 
 npm i class-validator class-transformer
+
+### AULA 2
+
+// tudo que é camada externa, fica em infra - bd - http - outras apis, etc
+
+yarn test:cov

@@ -62,8 +62,3 @@ export class Notification {
         return this.props.createdAt;
     }
 }
-
-const notification = new Notification({
-    content: 'asdasdasd',
-    category: 'social'
-});

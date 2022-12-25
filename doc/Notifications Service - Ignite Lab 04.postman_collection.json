@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "478b44b0-427f-48a7-8718-812dd1a556d7",
+		"name": "Notifications Service (Ignite Lab 04)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9113747"
+	},
+	"item": [
+		{
+			"name": "Create Notification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"recipientId\": \"e782d7f2-98fb-40a5-98b8-913695c360f0\",\r\n    \"content\": \"Você tem uma nova solicitação de amizade!!!\",\r\n    \"category\": \"Social\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/notifications",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"notifications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Count From Recipient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/notifications/count/from/e782d7f2-98fb-40a5-98b8-913695c360f0",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"notifications",
+						"count",
+						"from",
+						"e782d7f2-98fb-40a5-98b8-913695c360f0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get From Recipient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/notifications/from/e782d7f2-98fb-40a5-98b8-913695c360f0",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"notifications",
+						"from",
+						"e782d7f2-98fb-40a5-98b8-913695c360f0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancel Notification",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/notifications/43d3d0f5-a5c8-4e3c-9205-c0f84c677d6c/cancel",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"notifications",
+						"43d3d0f5-a5c8-4e3c-9205-c0f84c677d6c",
+						"cancel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Notification",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/notifications/43d3d0f5-a5c8-4e3c-9205-c0f84c677d6c/read",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"notifications",
+						"43d3d0f5-a5c8-4e3c-9205-c0f84c677d6c",
+						"read"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Unread Notification",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/notifications/43d3d0f5-a5c8-4e3c-9205-c0f84c677d6c/unread",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"notifications",
+						"43d3d0f5-a5c8-4e3c-9205-c0f84c677d6c",
+						"unread"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}

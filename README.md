@@ -1,14 +1,13 @@
 ## Ignite Lab #04 da Rocketseat
 
-### Comandos / Rascunhos
+### Rascunhos
 
 - `yarn global add @nestjs/cli`
 - `npm install -g @nestjs/cli`
-
 - `nest -h`
 
-// Inversão de Dependência => SOLID
-// Injeção de Dependência => precisa ter o Decorator @Injectable()
+> // Inversão de Dependência => SOLID<br/>
+> // Injeção de Dependência => precisa ter o Decorator @Injectable()
 
 - `npm i prisma -D`
 - `npm i @prisma/client`
@@ -20,7 +19,7 @@
 
 ### AULA 2
 
-// tudo que é camada externa, fica em infra - bd - http - outras apis, etc
+> // Tudo que é de camada externa, fica em "infra", exemplos: bd, http, outras apis, etc...
 
 - `yarn test:cov`
 
@@ -30,9 +29,10 @@
 
 - `npm run test:watch` // conferir os testes
 
-### AULA FINAL
+### AULA FINAL (Extra - Mensageria Kafka)
 
 - `npm i @nestjs/microservices`
 - `npm i kafkajs`
 
-- Obs: para rodar o Producer (basta roda o `node producer.js` dentro de `doc/kafka-producer`)
+> Obs: para rodar o Producer, basta executar o comando dentro de `doc/kafka-producer`...
+- `node producer.js`

@@ -1,0 +1,11 @@
+{
+  "name": "kafka-producer",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "kafkajs": "^2.2.3"
+  }
+}

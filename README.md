@@ -1,4 +1,6 @@
-## Ignite Lab #04 da Rocketseat
+## Ignite Lab #04 da Rocketseat 🚀
+
+### Projeto desenvolvido durante o Ignite Lab #04 da Rocketseat em Dezembro de 2022. Consiste em um microserviço com NodeJS (TypeScript) / NestJS, Prisma, Testes Unitários com Jest, boas práticas e padrões, princípios SOLID e por fim, comunicação através de mensageria com KafkaJS (Producer/Consumer).
 
 ### Rascunhos
 

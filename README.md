@@ -29,3 +29,10 @@
 - `npx tsc --noEmit` // checagem de erros typescript
 
 - `npm run test:watch` // conferir os testes
+
+### AULA FINAL
+
+- `npm i @nestjs/microservices`
+- `npm i kafkajs`
+
+- Obs: para rodar o Producer (basta roda o `node producer.js` dentro de `doc/kafka-producer`)

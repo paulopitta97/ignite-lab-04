@@ -36,3 +36,5 @@
 
 > Obs: para rodar o Producer, basta executar o comando dentro de `doc/kafka-producer`...
 - `node producer.js`
+
+- Repositório da Rocketseat: `https://github.com/rocketseat-education/ignite-lab-nodejs`

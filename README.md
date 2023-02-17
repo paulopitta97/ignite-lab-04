@@ -1,42 +1,44 @@
 ## Ignite Lab #04 da Rocketseat 🚀
 
-### Projeto desenvolvido durante o Ignite Lab #04 da Rocketseat em Dezembro de 2022. Consiste em um microserviço com NodeJS (TypeScript) / NestJS, Prisma, Testes Unitários com Jest, boas práticas e padrões, princípios SOLID e por fim, comunicação através de mensageria com KafkaJS (Producer/Consumer).
+### Projeto desenvolvido durante o Ignite Lab #04 da Rocketseat em Dezembro de 2022.
 
-### Rascunhos
 
-- `yarn global add @nestjs/cli`
-- `npm install -g @nestjs/cli`
-- `nest -h`
+### Consiste em um microserviço com NodeJS (TypeScript) / NestJS, Prisma, Testes Unitários com Jest, boas práticas e padrões, princípios SOLID e por fim, comunicação através de mensageria com KafkaJS (Producer/Consumer).
 
-> // Inversão de Dependência => SOLID<br/>
-> // Injeção de Dependência => precisa ter o Decorator @Injectable()
+- Tecnologias: `NodeJS`, `TypeScript`, `Nest`, `Prisma`, `SQLite`, `KafkaJS`, `Jest`, etc.
 
-- `npm i prisma -D`
-- `npm i @prisma/client`
-- `npx prisma init --datasource-provider SQLite`
-- `npx prisma migrate dev`
-- `npx prisma studio`
+### Configurando e executando:
 
-- `npm i class-validator class-transformer`
+- Aplicação:
+```
+npm install -g @nestjs/cli
+npm install
+npx expo start --clear
+```
 
-### AULA 2
+- Testes:
+```
+npm run test:watch
+npm run test:cov
+```
 
-> // Tudo que é de camada externa, fica em "infra", exemplos: bd, http, outras apis, etc...
+### Ferramentas:
 
-- `yarn test:cov`
+- Prisma Studio:
+```
+npx prisma studio
+```
 
-### AULA 3
+- Producer:
+```
+cd doc/kafka-producer/
+node producer.js
+```
 
-- `npx tsc --noEmit` // checagem de erros typescript
+### Rascunho
 
-- `npm run test:watch` // conferir os testes
+- [Visualizar Rascunho.](https://github.com/paulopitta97/ignite-lab-04/blob/master/RASCUNHO.md)
 
-### AULA FINAL (Extra - Mensageria Kafka)
+### 📝 Licença
 
-- `npm i @nestjs/microservices`
-- `npm i kafkajs`
-
-> Obs: para rodar o Producer, basta executar o comando dentro de `doc/kafka-producer`...
-- `node producer.js`
-
-- Repositório da Rocketseat: `https://github.com/rocketseat-education/ignite-lab-nodejs`
+- [MIT](https://github.com/paulopitta97/ignite-lab-04/blob/master/LICENSE) © [Paulo Pitta](https://github.com/paulopitta97)

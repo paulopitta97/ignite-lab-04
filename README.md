@@ -2,6 +2,7 @@
 
 ### Projeto desenvolvido durante o Ignite Lab #04 da Rocketseat em Dezembro de 2022.
 
+![banner-ignitelab04-redm](https://user-images.githubusercontent.com/52472087/219552593-809bf90b-b00a-43ab-b0e1-dc3aea49f357.png)
 
 ### Consiste em um microserviço com NodeJS (TypeScript) / NestJS, Prisma, Testes Unitários com Jest, boas práticas e padrões, princípios SOLID e por fim, comunicação através de mensageria com KafkaJS (Producer/Consumer).
 
